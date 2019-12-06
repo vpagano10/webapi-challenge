@@ -3,7 +3,7 @@ const Actions = require('../../data/helpers/actionModel');
 
 const router = express.Router();
 
-// GET      >>>     Test&Fix
+// GET      >>>     Working
 router.get('/', (req, res) => {
     Actions.get(req.query)
     .then(actions => {
