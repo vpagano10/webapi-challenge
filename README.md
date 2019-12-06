@@ -39,14 +39,29 @@ Commit your code regularly and use descriptive messages. This helps both you (in
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your Team Lead.
 
 - [ ] Mention two parts of Express that you learned about this week.
+    - Middleware
+    - Routing
 
 - [ ] Describe Middleware?
+    - Chained functions that have access to a req object, res object and next. They are called by express and have the ability to modify the req and res objects. Middleware provides a way to extend the features of the app provided by express. (adds functionality)
 
 - [ ] Describe a Resource?
+    - Not sure what the intended answer for 'resource' is here:
+        - expressjs.com
+        - An object, which defines one or more of the supported actions: index, new, create, show, edit, update, delete
+        - Insomnia/Postman
+        - middleware
+            - standard from express
+            - 3rd party
+            - custom
+        - routing
+        - hosting site like heroku
 
 - [ ] What can the API return to help clients know if a request was successful?
+    - Status code of 200 or 201 if something is created, and a json return of whatever they were geting or a success message in the case of delete.
 
 - [ ] How can we partition our application into sub-applications?
+    - Based on the Url that we expext to be present given which part of the app or which endpoints are being hit. In this app's case, projects and the sub actions for each project. The actions cannot exist without projects.
 
 ## Minimum Viable Product
 
